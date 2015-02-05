@@ -11,3 +11,13 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
+export HOMEBREW_GITHUB_API_TOKEN=a03df785a15813c2eaa50416c8b3a5ab0b29211d
+export DOCKER_HOST=tcp://
+
+# todo.txt helpers
+alias t='todo.sh -d ~/.todo.cfg'
+alias ta='todo.sh -d ~/.todo.cfg a `date "+%Y-%m-%d"` '
+alias taa='todo.sh -d ~/.todo.cfg a \(A\) `date "+%Y-%m-%d"` '
+alias tab='todo.sh -d ~/.todo.cfg a \(B\) `date "+%Y-%m-%d"` '
+alias tac='todo.sh -d ~/.todo.cfg a \(C\) `date "+%Y-%m-%d"` '

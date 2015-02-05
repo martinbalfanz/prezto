@@ -28,10 +28,19 @@ zstyle ':prezto:load' pmodule \
   'terminal' \
   'editor' \
   'history' \
+  'history-substring-search' \
   'directory' \
   'spectrum' \
   'utility' \
   'completion' \
+  'homebrew' \
+  'osx' \
+  'emacs' \
+  'ruby' \
+  'haskell' \
+  'git' \
+  'node' \
+  'syntax-highlighting' \
   'prompt'
 
 #

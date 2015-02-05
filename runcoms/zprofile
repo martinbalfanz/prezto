@@ -42,8 +42,22 @@ typeset -gU cdpath fpath mailpath path
 # )
 
 # Set the list of directories that Zsh searches for programs.
+export GHC_DOT_APP="/opt/homebrew-cask/Caskroom/ghc/7.8.3-r0/ghc-7.8.3.app"
+export ANDROID_HOME="/usr/local/opt/android-sdk"
+export GOPATH="${HOME}/go"
+
 path=(
   /usr/local/{bin,sbin}
+  $HOME/bin
+  $HOME/.cabal/bin
+  $HOME/.rvm/bin
+  $HOME/.rvm/gems/ruby-2.0.0-p247/bin
+  $HOME/.rvm/rubies/ruby-2.0.0-p247/bin
+  $HOME/.rvm/gems/ruby-2.0.0-p247@global/bin
+  $GHC_DOT_APP/Contents/bin
+  $HOME/go/bin
+  /usr/{bin,sbin}
+  /{bin,sbin}
   $path
 )
 
